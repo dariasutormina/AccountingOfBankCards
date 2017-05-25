@@ -1,0 +1,69 @@
+﻿<Page x:Class="AccountingOfBankCards.FindCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AccountingOfBankCards"
+      mc:Ignorable="d" 
+      d:DesignHeight="300"
+      Title="FindCardPage" Width="467">
+
+    <Grid>
+        <Label x:Name="label" Content="Find card" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="label1" Content="Choose parametr" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxFindCard" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="120">
+            <TextBlock>Number</TextBlock>
+            <TextBlock>CVC</TextBlock>
+            <TextBlock>Date</TextBlock>
+            <TextBlock>Surname and Name</TextBlock>
+            <TextBlock>Type</TextBlock>
+
+
+
+        </ComboBox>
+        <TextBox x:Name="textBoxNumber"  HorizontalAlignment="Left" Height="23" Margin="10,146,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" IsHitTestVisible="True"/>
+        <Button x:Name="buttonFindCard" Content="Find card" Click="buttonFindCard_Click" HorizontalAlignment="Left" Margin="50,258,0,0" VerticalAlignment="Top" Width="85" Height="30"/>
+        <Button x:Name="buttonCancel" Content="Cancel" Click="buttonCancel_Click" HorizontalAlignment="Left" Margin="170,258,0,0" VerticalAlignment="Top" Width="85" Height="30"/>
+        <ListBox x:Name="listBoxCards" HorizontalAlignment="Left" Height="105" Margin="156,23,0,0" VerticalAlignment="Top" Width="301"/>
+        <ComboBox x:Name="comboBoxMonth" HorizontalAlignment="Left" Margin="156,164,0,0" VerticalAlignment="Top" Width="54">
+            <TextBlock>01</TextBlock>
+            <TextBlock>02</TextBlock>
+            <TextBlock>03</TextBlock>
+            <TextBlock>04</TextBlock>
+            <TextBlock>05</TextBlock>
+            <TextBlock>06</TextBlock>
+            <TextBlock>07</TextBlock>
+            <TextBlock>08</TextBlock>
+            <TextBlock>09</TextBlock>
+            <TextBlock>10</TextBlock>
+            <TextBlock>11</TextBlock>
+            <TextBlock>12</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="comboBoxYear" HorizontalAlignment="Left" Margin="240,164,0,0" VerticalAlignment="Top" Width="87">
+            <TextBlock>2017</TextBlock>
+            <TextBlock>2018</TextBlock>
+            <TextBlock>2019</TextBlock>
+            <TextBlock>2020</TextBlock>
+            <TextBlock>2021</TextBlock>
+            <TextBlock>2022</TextBlock>
+            <TextBlock>2023</TextBlock>
+            <TextBlock>2024</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="textBoxCVC" HorizontalAlignment="Left" Height="23" Margin="10,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <TextBox x:Name="textBoxSurname" HorizontalAlignment="Left" Height="23" Margin="327,215,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="327,267,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBoxType" HorizontalAlignment="Left" Margin="156,221,0,0" VerticalAlignment="Top" Width="120">
+            <TextBlock>Visa</TextBlock>
+            <TextBlock>MasterCard</TextBlock>
+            <TextBlock>American Express</TextBlock>
+            <TextBlock>Maestro</TextBlock>
+        </ComboBox>
+        <Label x:Name="label2" Content="Number" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="label3" Content="CVC" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Month" HorizontalAlignment="Left" Margin="156,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Year" HorizontalAlignment="Left" Margin="240,133,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Type" HorizontalAlignment="Left" Margin="156,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Surname" HorizontalAlignment="Left" Margin="332,184,0,0" VerticalAlignment="Top" Width="68"/>
+        <Label x:Name="label8" Content="Name" HorizontalAlignment="Left" Margin="332,238,0,0" VerticalAlignment="Top" Width="80"/>
+    </Grid>
+</Page>

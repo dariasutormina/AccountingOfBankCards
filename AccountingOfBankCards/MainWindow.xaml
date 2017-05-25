@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AccountingOfBankCards"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Accounting of bank cards" FontSize="18" Height="350" Width="525">
     <Grid>
-        
+        <Frame x:Name="frameMain" NavigationUIVisibility="Hidden" />
+
     </Grid>
 </Window>

@@ -21,8 +21,12 @@ namespace AccountingOfBankCards
     public partial class MainWindow : Window
     {
         public MainWindow()
-        {
+
+       {
+
             InitializeComponent();
+            frameMain.Navigate(new LoginPage());
+           
         }
     }
 }
